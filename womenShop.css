@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&family=Roboto:ital,wght@0,700;1,400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+.name h1 {
+  margin-bottom: 5px;
+  text-align: center;
+  font-family: 'Noto Serif JP', serif;
+  font-size:50px;
+  color:rgb(247, 245, 245);
+} 
+.name h3 {
+	margin-bottom: 5px;
+  	text-align: center;
+  	font-family: "Noto Serfif JP", sans-serif;
+  	font-size: 30px;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: rgb(255, 255, 255);
+  color: rgb(182, 175, 175);
+  margin: 0;
+}
+
+.h3{
+    text-align: center;
+    color:black;
+    font-size: 50px;
+    padding-top: 1rem;
+}
+
+.image{
+    height: -100px;
+    width: -100px;
+}
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.menu .box-container .box{
+    background: #fff;
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);    
+}
+
+.menu .box-container .box .image{
+    height: 25rem;
+    width: 100%;
+    padding:1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.menu .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.menu .box-container .box .image .fa-heart{
+    position: absolute;
+    top:2.5rem; right: 2.5rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    background: #fff;
+    border-radius: 50%;
+    color:var(--black);
+}
+
+.menu .box-container .box .image .fa-heart:hover{
+    background-color: var(--green);
+    color:#000000;
+}
+
+.menu .box-container .box .content{
+    padding:2rem;
+    padding-top: 0;
+}
+
+.menu .box-container .box .content .stars{
+    padding-bottom: 1rem;
+}
+
+.menu .box-container .box .content .stars i{
+   font-size: 1.7rem;
+   color:var(--green);
+}
+
+.menu .box-container .box .content h3{
+    color:var(--black);
+    font-size: 2.5rem;
+}
+
+.menu .box-container .box .content .price{
+    color:var(--green);
+    margin-left: 1rem;
+    font-size: 2.5rem;
+}
+
+@media (max-width:991px){
+    section{
+        padding:2rem;
+    }
+}
+
+.container {
+  background-color: #000000;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 50px;
+}
+ 
+ .loading-text {
+  font-size: 20px;
+  color: #000000;
+  display: none;
+}
+
+.container.show-nav {
+  transform: rotate(-20deg);
+}
+ 
+.circle-container {
+  position: fixed;
+  top: -110px;
+  left: -110px;
+}
+ 
+.circle {
+  background-color: #caad2bda;
+  height: 200px;
+  width: 200px;
+  border-radius: 60%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+ 
+.container.show-nav .circle {
+  transform: rotate(-70deg);
+}
+ 
+.circle button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  height: 100px;
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+  color: rgb(0, 0, 0);
+}
+ 
+.circle button:focus {
+  outline: none;
+}
+ 
+.circle button#open-btn {
+  left: 60%;
+}
+ 
+.circle button#close-btn {
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+ 
+.container.show-nav + nav li {
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+ 
+nav {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  z-index: 100;
+}
+ 
+nav ul {
+  list-style-type: none;
+  padding-left: 30px;
+}
+ 
+nav ul li {
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  margin: 40px 0;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in;
+}
+ 
+nav ul li i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+ 
+nav ul li + li {
+  margin-left: 15px;
+  transform: translateX(-150%);
+}
+ 
+nav ul li + li + li {
+  margin-left: 30px;
+  transform: translateX(-200%);
+}
+ 
+nav a {
+  color: #000000;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+ 
+nav a:hover {
+  color: #caad2bda;
+  font-weight: bold;
+}
+
+
+.credit{
+    margin-left: 40%;
+    color: rgb(255, 255, 255);
+    padding-top: 15px;
+    padding-bottom: -20px;
+}

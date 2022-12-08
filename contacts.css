@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&family=Roboto:ital,wght@0,700;1,400&display=swap");
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(87, 87, 87);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(109, 108, 108);
+}
+
+.name {
+  margin-bottom: 5px;
+  text-align: center;
+  font-family: "Noto Serif JP", sans-serif;
+  font-size: 40px;
+  color: rgb(247, 245, 245);
+}
+.contactUs {
+  margin-bottom: 5px;
+  text-align: center;
+  font-family: "Noto Serfif JP", sans-serif;
+  font-size: 15px;
+}
+
+body {
+  font-family: "Noto Serfif JP", sans-serif;
+  background-color: rgb(248, 248, 247);
+  color: #b28508;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 1.7rem;
+  color: rgb(8, 8, 8);
+  background: var(--black);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.6rem 2rem;
+  background-color: rgb(243, 148, 6);
+}
+
+.btn:hover {
+  background: rgb(243, 148, 6);
+  letter-spacing: 0.1rem;
+}
+
+.container {
+  background-color: #000000;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 50px;
+}
+
+.credit {
+  margin-left: 40%;
+  color: rgb(243, 148, 6);
+  padding-bottom: 20px;
+  padding-top: 15px;
+}
+
+.container.show-nav {
+  transform: rotate(-20deg);
+}
+
+.circle-container {
+  position: fixed;
+  top: -110px;
+  left: -110px;
+}
+
+.circle {
+  background-color: #caad2bda;
+  height: 200px;
+  width: 200px;
+  border-radius: 60%;
+  position: relative;
+  transition: transform 0.6s linear;
+}
+
+.container.show-nav .circle {
+  transform: rotate(-90deg);
+}
+
+.circle button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  height: 100px;
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+  color: rgb(0, 0, 0);
+}
+
+.circle button#open-btn {
+  left: 60%;
+}
+
+.circle button#close-btn {
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+.container.show-nav + nav li {
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+
+nav {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 30px;
+}
+
+nav ul li {
+  text-transform: uppercase;
+  color: #000000;
+  margin: 40px 0;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in;
+}
+
+nav ul li i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+nav ul li + li {
+  margin-left: 15px;
+  transform: translateX(-150%);
+}
+
+nav ul li + li + li {
+  margin-left: 30px;
+  transform: translateX(-200%);
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+nav a:hover {
+  color: #caad2bda;
+  font-weight: bold;
+}
+
+.order form {
+  max-width: 90rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  background: rgb(0, 0, 0);
+  padding: 1.5rem;
+  margin: 0 auto;
+  color: rgb(0, 0, 0);
+}
+
+.order form .inputBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.order form .inputBox .input {
+  width: 49%;
+}
+
+.order form .inputBox .input span {
+  display: block;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  color: var(--light-color);
+}
+
+.order form .inputBox .input input,
+.order form .inputBox .input textarea {
+  background: #eee;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.order form .inputBox .input input:focus,
+.order form .inputBox .input textarea:focus {
+  border: 0.1rem solid var(--green);
+}
+
+.order form .inputBox .input textarea {
+  height: 20rem;
+  resize: none;
+}
+
+.order form .btn {
+  margin-top: 0;
+}
+.sub-heading {
+  text-align: center;
+  color: var(--green);
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+#thank_you {
+  color: white !important;
+}
+.credit {
+  margin-left: 40%;
+  color: rgb(255, 255, 255);
+  padding-top: 15px;
+  padding-bottom: -20px;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous"/>
+    	<link rel="stylesheet" href="contacts.css"/>
+    
+	<title>Contact Us</title>
+    	<script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+     <div class="container">
+     	<div class="circle-container">
+     		<div class="circle">
+           		<button id="close-btn">
+            		<i class="fas fa-times"></i>
+          		</button>
+                	<button id="open-btn">
+            		<i class="fas fa-bars"></i>
+         		 </button>
+            </div>
+       </div>
+	 <nav>
+          	<ul type="none">
+            	<li><i class="index"></i><a href="index.html">Home</a></li>
+             	<li><i class="menShop"></i><a href="menShop.html">Men's Shop</a></li>
+             	<li><i class="womenShop"></i><a href="womenShop.html">Women's Shop</a></li>
+             	<li><i class="contacts"></i><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+       
+        <div class="name">
+            <h1> Bene Italiano </h1>
+        </div>
+
+        <div class="contactUs">
+            <h2> Contact Us</h2>
+        </div>
+        <div class="contactUs">
+            <p>To learn more about the fabric and leathers that we use please contact our in-store manager Jennifer via email <a href = "mailto: jennifer@beneitaliano.com">here</a> or text her at <a href="tel:7185552222">1+718)-555-2222</a>.</p>
+
+            <p>To inquire more about customizing your own suit or dress to your exact specifications please email our tailoring department <a href = "mailto: tailoring@beneitaliano.com">here</a> and we can get you into our shop at our next available appointment time with one of our world class tailors.</p>
+
+            <h2>Our store hours are :</h2>
+            
+            <ul>
+                <p>Sunday: 9am-2pm</p>
+                <p>Monday: 9am-6pm</p>
+                <p>Tuesday: 9am-6pm</p>
+                <p>Wednesday: 9am-6pm</p>
+                <p>Thursday: 9am-6pm</p>
+                <p>Friday: 9am-6pm</p>
+                <p>Saturday: Closed</p>
+            </ul>
+        </div>
+        <div>
+         <section class="order" id="order">
+            <h2 class="sub-heading"> Order now and get 50% off on your first purchase! </h2>
+
+                <form action="">
+
+                    <div class="inputBox">
+                        <div class="input">
+                            <span>Full name:</span>
+                            <input type="text" placeholder="Enter your name">
+                        </div>
+                        <div class="input">
+                            <span>Contact number:</span>
+                            <input type="number" placeholder="Enter your number">
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <div class="input">
+                            <span>Product name:</span>
+                            <input type="text" placeholder="Enter product name">
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <div class="input">
+                            <span>Number of orders:</span>
+                            <input type="number" placeholder="Quantity">
+                        </div>
+                        <div class="input">
+                            <span>Date and time</span>
+                            <input type="datetime-local">
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <div class="input">
+                            <span>Address:</span>
+                            <textarea name="" placeholder="Enter your address" id="" cols="10" rows="5"></textarea>
+                        </div>
+                        <div class="input">
+                            <span>Additional comments:</span>
+                            <textarea name="" placeholder="Special Instructions" id="" cols="10" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div id="my_form">
+
+                        <input type="submit" value="order now" class="btn" id="nextStep">
+                    </div>
+                    <div id="thank_you" style="display: none;">
+                        <p>Thank you for your order!</p>
+                        <button type="submit">Close</button>
+                    </div>
+                </form>
+        </section>
+        </div>
+        <div>
+            <hr>
+            <footer class="credit"> &copy; Copyright 2022 by <span>Aisha, Elan, Orzeeta, Ayesha </span> </footer>
+        </div>
+        <script src ="contacts.js"></script>
+        </body>
+</html>
